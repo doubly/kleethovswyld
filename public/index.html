@@ -75,8 +75,8 @@
         $.get('/votes', function(data) {
           console.log(data)
           votes = JSON.parse(data)
-          $('#kVotes').text(numberWithCommas(votes[0]));
-          $('#wVotes').text(numberWithCommas(votes[1]));
+          $('#kVotes').text(numberWithCommas(votes[1]));
+          $('#wVotes').text(numberWithCommas(votes[0]));
           setTimeout(doPoll, 15000);
         });
     }
